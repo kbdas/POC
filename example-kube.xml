@@ -14,6 +14,9 @@
       <property name="ipFinder">
         <bean
 class="org.apache.ignite.spi.discovery.tcp.ipfinder.kubernetes.TcpDiscoveryKubernetesIpFinder">
+               <property name="masterUrl" value="https://10.0.0.1:443"/>
+                        <property name="namespace" value="headlesscommerce-apidevelopment-dev"/>
+                      <property name="serviceName" value="ignite-test-service"/>
         </bean>
       </property>
     </bean>
